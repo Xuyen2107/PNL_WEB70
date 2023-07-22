@@ -10,13 +10,6 @@ function removeDuplicateFromArray(arr) {
    return newArr;
 }
 
-// Dùng fillter
-function removeDuplicateFromArrayOne(arr) {
-   return arr.filter((item, index) => {
-      return arr.indexOf(item) === index;
-   });
-}
-
 //Dùng forEach
 function removeDuplicateFromArrayTwo(arr) {
    let newArr = [];
@@ -36,6 +29,5 @@ function removeDuplicateFromArrayThree(arr) {
 const arr = ["one", "one", 1, 1, 2, 5, 9, -1, 2, -1, "vietnam", "hanoi"];
 
 console.log("Array", removeDuplicateFromArray(arr));
-console.log("ArrayOne", removeDuplicateFromArrayOne(arr));
 console.log("ArrayTwo", removeDuplicateFromArrayTwo(arr));
 console.log("ArrayThree", removeDuplicateFromArrayThree(arr));
